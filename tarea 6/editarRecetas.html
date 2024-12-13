@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Receta</title>
+</head>
+<body>
+    <h1>Editar Receta: {{ receta['nombre'] }}</h1>
+    <form method="post">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" value="{{ receta['nombre'] }}"><br>
+        <label>Ingredientes:</label>
+        <textarea name="ingredientes">{{ receta['ingredientes'] }}</textarea><br>
+        <label>Pasos:</label>
+        <textarea name="pasos">{{ receta['pasos'] }}</textarea><br>
+        <button type="submit">Guardar</button>
+    </form>
+    <a href="/">Cancelar</a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Libro de Recetas</title>
+</head>
+<body>
+    <h1>Listado de Recetas</h1>
+    <ul>
+        {% for receta in recetas %}
+        <li>
+            <a href="/recetas/{{ receta['nombre'] }}">{{ receta['nombre'] }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/recetas/agregar">Agregar nueva receta</a>
+</body>
+</html>
